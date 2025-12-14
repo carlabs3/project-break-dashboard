@@ -418,7 +418,7 @@ p {
         margin-bottom: 20px;
     }
 
-    /* WIDGET RELOJ, METEO, PASSWORD: Asegurar ancho completo y centrado si aplica */
+    /* Asegurar ancho completo y centrado*/
     .widget-reloj .reloj-container,
     .widget-meteo .weather-container,
     .widget-password .password-container {
@@ -448,14 +448,14 @@ p {
         margin-bottom: 0px;
     }
     
-    /* WIDGET PASSWORD: Ajustar la disposición de la longitud si fuera necesario */
+    /* WIDGET PASSWORD */
     .widget-password .longitud-input {
         flex-direction: column; /* Apilar label e input */
         gap: 5px;
     }
 
     .widget-password .resultado-container {
-        flex-direction: column; /* Apilar el resultado y el botón de copiar */
+        flex-direction: column; 
         gap: 10px;
     }
 
@@ -475,25 +475,25 @@ p {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    /* Mantener el flex de dos columnas, pero reducir el padding y espaciado */
+ 
     main.dashboard {
         gap: 24px;
         padding: 100px 30px 80px;
     }
 
-    /* Reducir el ancho mínimo del widget de links, pero mantenerlo manejable */
+
     .widget-links .clipboard-container {
-        min-width: 400px; /* Ajustar el mínimo para tablets */
+        min-width: 400px; 
         width: 100%;
     }
 
-    /* Asegurar que los widgets del lado derecho no excedan su contenedor */
+ 
     .dashboard-right {
         width: 100%;
         max-width: 450px;
     }
 
-    /* Reducir el padding de los contenedores de los widgets */
+
     .widget-reloj .reloj-container,
     .widget-meteo .weather-container,
     .widget-password .password-container {

@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 }
 
 /* Contenedor principal */
@@ -153,6 +154,7 @@
 /* Media Queries */
 
 @media (max-width: 768px) {
+  
     .weather-container {
         padding: 14px;
     }
@@ -192,5 +194,12 @@
     .hour-card img {
         width: 36px;
         height: 36px;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    html, body {
+        overflow-y: hidden; 
     }
 }
