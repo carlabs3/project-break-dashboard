@@ -5,6 +5,7 @@
     align-items: center;
     padding: 40px;
     color: white;
+    overflow-y: auto;
 }
 
 .clipboard-container {
@@ -188,5 +189,12 @@
     }
     .clipboard-paper {
         max-height: 280px;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    html, body {
+        overflow-y: hidden; 
     }
 }
