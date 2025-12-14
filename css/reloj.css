@@ -1,0 +1,83 @@
+.page-reloj {
+    background-color: #0a0a0a;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.reloj-container {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    min-width: 450px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.reloj-container p {
+    font-size: 18px;
+}
+
+.reloj-container h1 {
+    font-size: 90px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+#fecha {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#frase {
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .page-reloj .reloj-container {
+        padding: 25px;
+        max-width: 90%;
+        min-width: unset;
+    }
+
+    .page-reloj .reloj-container h1 {
+        font-size: 70px;
+    }
+
+    .page-reloj #fecha {
+        font-size: 28px;
+    }
+
+    .page-reloj .reloj-container p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-reloj .reloj-container {
+        padding: 15px;
+    }
+
+    .page-reloj .reloj-container h1 {
+        font-size: 50px;
+    }
+
+    .page-reloj #fecha {
+        font-size: 22px;
+    }
+
+    .page-reloj .reloj-container p {
+        font-size: 14px;
+    }
+}

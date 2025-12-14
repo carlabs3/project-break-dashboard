@@ -1,0 +1,144 @@
+/* Reset CSS básico */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Body básico*/
+body {
+	line-height: 1;
+	min-height: 100vh;
+	color: white;
+	font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+	position: relative;
+	overflow: hidden;
+	background-color: grey;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Header genérico */
+.header {
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	z-index: 1000;
+	font-size: 22px;
+}
+
+.header a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	gap: 8px;
+	transition: all .5s;
+}
+
+.header a:hover {
+	gap: 12px;
+	font-size: 24px;
+	color: #fdd835;
+}
+
+header.header a p {
+    font-weight: 700; 
+    font-size: 18px;
+}
+
+
+/* Botones genéricos */
+button {
+	font-weight: 600;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+/* Inputs genéricos */
+input {
+	font-size: 18px;
+	outline: none;
+	box-sizing: border-box;
+}
+
+/* Footer */
+
+footer.footer {
+    position: fixed;      
+    bottom: 0;             
+    left: 0;
+    width: 100%;           
+    border-top: 1px solid white; 
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente  */
+    backdrop-filter: blur(5px);           /* Efecto de desenfoque  */
+    color: white;
+    display: flex;
+    justify-content: center; 
+    padding: 20px 0;       /* padding vertical */
+    z-index: 1000;         /* Para estar por encima del contenido */
+}
+
+
+footer.footer nav ul {
+    list-style: none; 
+    padding: 0;       
+    margin: 0;        
+    display: flex;    
+    gap: 30px;        
+    align-items: center; 
+}
+
+/* Estilo de los enlaces (<a> dentro de <li>) */
+footer.footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+footer.footer nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+
